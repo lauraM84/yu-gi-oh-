@@ -21,13 +21,13 @@ function createCardElement(card) {
 
     const titleElement = createTextElement('h2', card.name);
     const imageElement = createImageElement(card.card_images[0].image_url);
-    const descriptionElement = createTextElement('p', card.description);
+    /* const descriptionElement = createTextElement('p', card.description); */
     const linkElement = createLinkElement(`detail.html?id=${card.id}`, 'View Details');
 
 
     cardElement.appendChild(titleElement);
     cardElement.appendChild(imageElement);
-    cardElement.appendChild(descriptionElement);
+   /*  cardElement.appendChild(descriptionElement) */;
     cardElement.appendChild(linkElement);
 
     return cardElement;
